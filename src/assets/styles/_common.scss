@@ -1,0 +1,80 @@
+@use 'variables' as *;
+
+.site-header {
+    background-color: $main-color;
+    color: $text-color;
+    padding: 1rem;
+
+    @media (min-width: 641px) {
+        .header-container {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .title {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .menu-toggle {
+        display: none;
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        color: $text-color;
+        cursor: pointer;
+    }
+
+    .nav {
+        display: flex;
+        gap: 1rem;
+
+        .nav-link {
+            color: $text-color;
+            padding: 0.3rem 0.5rem;
+
+            &:hover {
+                color: $accent-color;
+            }
+        }
+    }
+
+    @media (max-width: 640px) {
+        .menu-toggle {
+            display: block;
+        }
+
+        .nav {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 1rem;
+
+            &.open {
+                display: flex;
+            }
+
+            .nav-link {
+                padding: 0.5rem 0;
+            }
+        }
+    }
+}
+
+.main-content {
+    padding: 1rem;
+
+    @media (min-width: 641px) {
+        width: 70%;
+        margin: 0 auto;
+    }
+}

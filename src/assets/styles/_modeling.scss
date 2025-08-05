@@ -1,0 +1,58 @@
+.modeling-section {
+    padding: 0 2rem;
+    background-color: #f9f9f9;
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: #333;
+    }
+
+    .modeling-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .model {
+        flex: 1 1 300px;
+        max-width: 400px;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        p {
+            margin-top: 0.5rem;
+            color: #555;
+        }
+    }
+}
+
+.reference-section {
+    padding: 2rem;
+
+    h3 {
+        font-size: 1.6rem;
+        color: #333;
+        border-left: 5px solid #007acc;
+        padding-left: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .video-container {
+        max-width: 400px;
+        /* モデル画像と同じくらいの最大幅 */
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
